@@ -12,6 +12,7 @@ body {
   font-family: 'Mulish', sans-serif;
   font-size: 1rem;
   color: var(--dark);
+  overflow-x: hidden;
 }
 
 main {
@@ -121,7 +122,12 @@ button {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  max-width: 100%;
   border-radius: 3px;
+}
+
+.file-holder span {
+  word-break: break-word;
 }
 
 @media screen and (max-width: 756px) {
