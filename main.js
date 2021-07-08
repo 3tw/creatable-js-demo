@@ -90,7 +90,7 @@ functionSeries.push(function() {
   .selectParent()
   .attribute('style', 'opacity: 1; transition: opacity .35s ease-in-out; line-height: 1.4rem; font-size: 1rem;')
   .select('button')
-  .text('Ok, go on - create some elements')
+  .text('Ok, go on - create an element')
   `
 
   el
@@ -99,7 +99,7 @@ functionSeries.push(function() {
     .selectParent()
     .attribute('style', 'opacity: 1; transition: opacity .35s ease-in-out; line-height: 1.4rem; font-size: 1rem;')
     .select('button')
-    .text('Ok, go on - create some elements')
+    .text('Ok, go on - create an element')
 
   el.select('.code-log').text(calls)
 })
