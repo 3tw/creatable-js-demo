@@ -5,7 +5,7 @@
     "watch-poll": "mix watch -- --watch-options-poll=1000",
     "hot": "mix watch --hot",
     "production": "mix --production",
-    "gh-pages": "git checkout gh-pages && git merge main && git subtree push --prefix creatable-js-demo origin gh-pages && git checkout main"
+    "gh-pages": "git checkout gh-pages && git merge main && git push origin gh-pages && git checkout main"
   },
   "repository": {
     "type": "git",
