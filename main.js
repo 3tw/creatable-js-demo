@@ -88,7 +88,6 @@ functionSeries.push(function() {
   const calls = `el
   .select('.code-log')
   .selectParent()
-  .selectParent()
   .attribute('style', 'opacity: 1; transition: opacity .35s ease-in-out; line-height: 1.4rem; font-size: 1rem;')
   .select('button')
   .text('Ok, go on - create some elements')
