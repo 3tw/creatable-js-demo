@@ -117,7 +117,7 @@ functionSeries.push(function() {
   .attribute('id', 'custom-input')
   .attribute('multiple')
   .select('button')
-  .text("Make it of type 'file'")
+  .text("Change input type")
  `
 
   el
@@ -131,7 +131,7 @@ functionSeries.push(function() {
     .attribute('id', 'custom-input')
     .attribute('multiple')
     .select('button')
-    .text("Make it of type 'file'")
+    .text("Change input type")
 
   el.select('.code-log').text(calls)
 })
