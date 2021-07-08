@@ -1,0 +1,148 @@
+:root {
+  --dark: #2d3047;
+  --purple: #c1b7cc;
+  --yellow: #ebdf84;
+  --green: #a6c3c9;
+  --blue: #93b7be;
+  --magenta: #da4167;
+}
+
+body {
+  margin: 0;
+  font-family: 'Mulish', sans-serif;
+  font-size: 1rem;
+  color: var(--dark);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-items: center;
+  align-items: flex-start;
+  max-width: 2000px;
+  min-height: calc(80vh - 40px);
+  padding: 20px 6%;
+  margin: 0 auto;
+}
+
+header {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 30px 6% 0 6%;
+}
+h1 {
+  font-size: 1rem;
+  display: inline;
+}
+.social {
+  color: var(--magenta);
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 40px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.col-left {
+  grid-column: 1/2;
+  border-radius: 4px 0 0 4px;
+}
+.col-middle {
+  grid-column: 2/3;
+}
+.col-right {
+  grid-column: 3/4;
+  justify-content: flex-start;
+  border-radius: 0 4px 4px 0;
+}
+
+h2 {
+  font-weight: 800;
+  margin-top: 0;
+}
+
+.bg-purple {
+  background-color: var(--purple);
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+button {
+  grid-column: 2/3;
+  font-size: 1rem;
+  line-height: 20px;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.upload-holder {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  padding: 10px;
+  margin-bottom: 0;
+  background: var(--dark);
+  border-radius: 3px;
+}
+
+.file-input {
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 100%;
+  cursor: pointer;
+}
+
+.file-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 756px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+  }
+  .col {
+    grid-column: 1/2;
+    height: auto;
+  }
+  .col-left {
+    grid-row: 2/3;
+    border-radius: 0;
+  }
+  .col-middle {
+    grid-row: 1/2;
+    border-radius: 4px 4px 0 0;
+  }
+  .col-right {
+    grid-row: 3/4;
+    border-radius: 0 0 4px 4px;
+  }
+}

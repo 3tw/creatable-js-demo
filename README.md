@@ -1,5 +1,3 @@
-# Create Element JS
+# Creatable-js demo
 
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+A demo page for [Creatable-js](https://github.com/3tw/creatable-js).
